@@ -1,0 +1,278 @@
+/* Etiquetas generales*/
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+button {
+    background-color: #8B48BF;
+    border-radius: 50px;
+    color: white;
+    height: 44px;
+    border: none;
+    width: 134px;
+    font-size: 13px;
+    font-weight: 500;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Encabezado -----------------------------------------------------------------------------------*/
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 5vh;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+
+}
+
+header nav ul li {
+    padding: 0px 28px;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+li a {
+    text-decoration: none;
+    color: #242E52;
+}
+
+/*Cuerpo------------------------------------------------------------------------------------------*/
+
+main {
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+.principal {
+    width: 39%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+h1 {
+    font-size: 58px;
+    width: 80%;
+    margin: 0%;
+}
+
+.principal p {
+    font-size: 16.55px;
+    width: 47%;
+    margin: 0px;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+
+.segundo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.segundo article {
+    width: 37%;
+    padding-top: 10% ;
+}
+
+.segundo h2 {
+    width: 80%;
+    font-size: 36px;
+    font-weight: 700;
+    color: #232851;
+    padding-left: 85px;
+}
+
+.segundo h3 {
+    font-size: 16px;
+    color: #323851;
+} 
+
+.h3-01::before {
+    content: "01";
+    background-color: #8B48BF;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 25px;
+    margin-right: 20px;
+}
+
+.h3-02::before {
+    content: "02";
+    background-color: #8B48BF;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 25px;
+    margin-right: 20px;
+}
+
+.h3-03::before {
+    content: "03";
+    background-color: #8B48BF;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 25px;
+    margin-right: 20px;
+}
+
+#izquierda-p {
+    font-size: 16px;
+    width: 65%;
+    color: #000000;
+}
+
+.segundo p {
+    font-size: 16.2984px;
+    width: 80%;
+    color: #B3B2B7;
+    padding-left: 85px;
+    text-align:left;
+}
+
+
+
+/*----------------------------------------------------------------------------------------------*/
+
+.tercero{
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10% 0%;
+}
+
+.tercero h2 {
+    font-size: 39.2143px;
+    color: #242E53;
+    font-weight: 700;
+}
+
+.cards {
+    background-color: #FAFAFA;
+    display: flex;
+    width: 90%;
+    height: 90%;
+}
+
+.cards p {
+    text-align: center;
+    color: #B9B9C1;
+    font-size: 16px;
+    width: 80%;
+}
+
+.cards h3 {
+    text-align: center;
+    color: #3F4868;
+    font-size: 16.0714px;
+    font-weight: 700;
+}
+
+.tercero img{
+    width: 70px;
+    height: 70px;
+}
+/*----------------------------------------------------------------------------------------------*/
+
+.cuarto {
+    background-color: #8B48BF ;
+    display: flex;
+    justify-content: space-around;
+    height: 30vh;
+    align-items: center;
+    margin-top: 15vh ;
+}
+
+.cuarto h2 {
+    font-size: 40px;
+    color: white;
+    width: 30%;
+}
+
+#reversebutton {
+    background-color: white;
+    border-radius: 50px;
+    color: #8B48BF;
+    height: 44px;
+    border: none;
+    width: 134px;
+    font-size: 13px;
+    font-weight: 500;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+}
+
+/* Pie de página---------------------------------------------------------------------------------*/
+
+footer {
+    background-color: #1E1E26;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    height: 30vh;
+    align-items: center;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 20px 0px;
+}
+
+footer li a{
+    text-decoration: none;
+    color: white;
+}
+
+footer section input {
+    border-radius: 50px;
+    height: 44px;
+    width: 244px;
+    font-size: 13.1806px;
+}
+
+footer section button {
+    border-radius: 50px;
+    height: 44px;
+    width:  63px ;
+    align-items: center;
+}
+
+.logos {
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+ .inbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70%;
+
+}
+
+footer p{
+    font-size: 12.5px;
+    font-weight: 500;
+    color: #8C8C94;
+}
+
+
+
+
+/*-------------------------------------------------------------------------------------*/
