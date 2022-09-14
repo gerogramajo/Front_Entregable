@@ -9,7 +9,7 @@
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 
-button {
+button{
     background-color: #8B48BF;
     border-radius: 50px;
     color: white;
@@ -22,6 +22,11 @@ button {
 }
 
 
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* Encabezado -----------------------------------------------------------------------------------*/
 header {
     display: flex;
@@ -46,6 +51,13 @@ li a {
     color: #242E52;
 }
 
+header button:hover {
+    opacity: 80%
+}
+
+.menu-hamburguesa {
+    display: none;
+}
 /*Cuerpo------------------------------------------------------------------------------------------*/
 
 main {
@@ -57,7 +69,8 @@ main {
 .principal {
     width: 39%;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+
 }
 
 
@@ -65,14 +78,19 @@ h1 {
     font-size: 58px;
     width: 80%;
     margin: 0%;
+    padding: 5% 0%;
 }
 
 .principal p {
     font-size: 16.55px;
     width: 47%;
     margin: 0px;
+    padding-bottom: 5%;
 }
 
+main button:hover {
+    opacity: 80%
+}
 /*----------------------------------------------------------------------------------------------*/
 
 .segundo {
@@ -81,7 +99,7 @@ h1 {
 }
 
 .segundo article {
-    width: 37%;
+    width: 36.5%;
     padding-top: 10% ;
 }
 
@@ -90,7 +108,7 @@ h1 {
     font-size: 36px;
     font-weight: 700;
     color: #232851;
-    padding-left: 85px;
+    padding-left: 80px;
 }
 
 .segundo h3 {
@@ -127,15 +145,16 @@ h1 {
 
 #izquierda-p {
     font-size: 16px;
-    width: 65%;
+    width: 63%;
     color: #000000;
+    padding-left: 80px;
 }
 
 .segundo p {
     font-size: 16.2984px;
     width: 80%;
     color: #B3B2B7;
-    padding-left: 85px;
+    padding-left: 90px;
     text-align:left;
 }
 
@@ -188,8 +207,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 5% 0px;
-    border-radius: 20px;
+    margin: 5% 0% 3% 0%;
     background-color: #FAFAFA
 }
 
@@ -201,6 +219,9 @@ h1 {
     border-radius: 1000px;
 }
 
+.tercero button:hover {
+    opacity: 80%
+}
 /*----------------------------------------------------------------------------------------------*/
 
 .cuarto {
@@ -230,6 +251,9 @@ h1 {
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
 }
 
+#reversebutton:hover {
+    opacity: 80%
+}
 /* Pie de página---------------------------------------------------------------------------------*/
 
 footer {
@@ -251,7 +275,11 @@ footer ul li{
     margin: 20px 0px;
 }
 
-footer li a{
+.footer-li{
+    margin-bottom: 50px;
+}
+
+footer a{
     text-decoration: none;
     color: white;
 }
@@ -277,12 +305,16 @@ footer section button {
     flex-direction: column;
 }
 
+.redes img {
+    padding: 0 3px;
+}
+
  .inbox {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 70%;
-
+    padding-top: 40px;
 }
 
 footer p{
@@ -291,7 +323,57 @@ footer p{
     color: #8C8C94;
 }
 
+.copyright {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
 
 
 
 /*-------------------------------------------------------------------------------------*/
+
+@media (max-width: 480px) {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    header {
+        width: 100vw;
+        
+    }
+
+    header nav {
+        display: none;
+    }
+    header button {
+        display: none;
+    }
+
+    .menu-hamburguesa{
+        display:flex
+
+    }
+
+    main {
+        flex-direction: column-reverse;
+        width: 100vw;
+        align-items: center;
+        text-align: center;
+        height: 10%;
+    }
+
+    .segundo{
+        flex-direction: column;
+    }
+
+    .card1, .card3{
+        display: none;
+    }
+
+    .cuarto {
+        flex-direction: column;
+    }
+}
