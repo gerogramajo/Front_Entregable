@@ -91,6 +91,10 @@ h1 {
 main button:hover {
     opacity: 80%
 }
+
+.graphic-mobile{
+    display: none;
+}
 /*----------------------------------------------------------------------------------------------*/
 
 .segundo {
@@ -342,7 +346,7 @@ footer p{
 
     header {
         width: 100vw;
-        
+        justify-content: space-between;
     }
 
     header nav {
@@ -357,23 +361,99 @@ footer p{
 
     }
 
+    /*--------------------------------------------------*/
     main {
         flex-direction: column-reverse;
-        width: 100vw;
         align-items: center;
         text-align: center;
-        height: 10%;
+        justify-content: center;
     }
 
+    .principal{
+        justify-content: center;
+    }
+
+    .principal h1 {
+        justify-content: center;
+        width: 50vw;
+        height: 40%;
+    }
+
+    .principal p {
+        justify-content: center;
+        width: 90%;
+    }
+
+    
+    .derecha {
+        display: none;
+    }
+
+    .graphic-mobile{
+        display: flex;
+    }
+
+    /*----------------------------------------------------*/
     .segundo{
         flex-direction: column;
+        width: 100vw;
+        margin: 20% 0%;
+        justify-content: space-between;
+
+    }
+
+    #izquierda-p{
+        width: 84vw;
+        margin-top: 20px;
+        text-align: center
+    }
+    .segundo h2{
+        width: 84vw;
+        justify-content: center;
+        text-align: center;
+        
+    }
+
+    .segundo h3 {
+        background: #8B48BF4D;
+        width: 100vw;
+        height: 40px;
+        padding: 6% 0;
+        margin: 10% 0;
+    }
+
+    .segundo p{
+        width: 100vw;
+    }
+
+    /*----------------------------------------------------*/
+
+    .tercero {
+        margin-top: 30%;
     }
 
     .card1, .card3{
         display: none;
     }
 
+    .card2 {
+        width: 90%;
+        padding-bottom: 5%;
+        margin: 30% 0 10% 0;
+    }
+
+    /*----------------------------------------------------*/
+
     .cuarto {
         flex-direction: column;
     }
+
+    .cuarto h2 {
+        width: 70%;
+        text-align: center;
+    }
+
+    /*----------------------------------------------------*/
+
+
 }
