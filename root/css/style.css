@@ -1,3 +1,4 @@
+/* VICTOR GENIO DEL ALMA TENE EN CUENTA ESTO: La pantalla de referencia es de 1920x1080, en la parte mobile en el h1 aunque probé redunciendo el contenedor un 10% para que al poner width al 100% quede igual no me fue posible */
 /* Etiquetas generales*/
 .column {
     display: flex;
@@ -9,7 +10,7 @@
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 
-button{
+button {
     background-color: #8B48BF;
     border-radius: 50px;
     color: white;
@@ -27,6 +28,7 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
 /* Encabezado -----------------------------------------------------------------------------------*/
 header {
     display: flex;
@@ -58,21 +60,23 @@ header button:hover {
 .menu-hamburguesa {
     display: none;
 }
+
 /*Cuerpo------------------------------------------------------------------------------------------*/
 
 main {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     padding-top: 10%;
 }
 
-.principal {
+.principal section {
     width: 39%;
     display: flex;
-    justify-content: flex-start;
-
 }
 
+.primero {
+    padding-left: 5.3%;
+}
 
 h1 {
     font-size: 58px;
@@ -92,9 +96,10 @@ main button:hover {
     opacity: 80%
 }
 
-.graphic-mobile{
+main .graphic-mobile {
     display: none;
 }
+
 /*----------------------------------------------------------------------------------------------*/
 
 .segundo {
@@ -104,7 +109,7 @@ main button:hover {
 
 .segundo article {
     width: 36.5%;
-    padding-top: 10% ;
+    padding-top: 10%;
 }
 
 .segundo h2 {
@@ -118,7 +123,7 @@ main button:hover {
 .segundo h3 {
     font-size: 16px;
     color: #323851;
-} 
+}
 
 .h3-01::before {
     content: "01";
@@ -159,14 +164,14 @@ main button:hover {
     width: 80%;
     color: #B3B2B7;
     padding-left: 90px;
-    text-align:left;
+    text-align: left;
 }
 
 
 
 /*----------------------------------------------------------------------------------------------*/
 
-.tercero{
+.tercero {
     justify-content: space-around;
     display: flex;
     flex-direction: column;
@@ -201,12 +206,12 @@ main button:hover {
     font-weight: 700;
 }
 
-.tercero img{
+.tercero img {
     width: 70px;
     height: 70px;
 }
 
-.card{
+.card {
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -216,7 +221,7 @@ main button:hover {
     padding-bottom: 10px;
 }
 
-.card img{
+.card img {
     position: relative;
     bottom: 40px;
     width: 100px;
@@ -227,15 +232,16 @@ main button:hover {
 .tercero button:hover {
     opacity: 80%
 }
+
 /*----------------------------------------------------------------------------------------------*/
 
 .cuarto {
-    background-color: #8B48BF ;
+    background-color: #8B48BF;
     display: flex;
     justify-content: space-around;
     height: 30vh;
     align-items: center;
-    margin-top: 15vh ;
+    margin-top: 15vh;
 }
 
 .cuarto h2 {
@@ -259,6 +265,7 @@ main button:hover {
 #reversebutton:hover {
     opacity: 80%
 }
+
 /* Pie de página---------------------------------------------------------------------------------*/
 
 footer {
@@ -274,17 +281,17 @@ footer ul {
     list-style: none;
 }
 
-footer ul li{
+footer ul li {
     font-size: 16px;
     font-weight: 400;
     margin: 20px 0px;
 }
 
-.footer-li{
+.footer-li {
     margin-bottom: 50px;
 }
 
-footer a{
+footer a {
     text-decoration: none;
     color: white;
 }
@@ -299,8 +306,12 @@ footer section input {
 footer section button {
     border-radius: 50px;
     height: 44px;
-    width:  63px ;
+    width: 63px;
     align-items: center;
+}
+
+footer button:hover {
+    opacity: 80%;
 }
 
 .flex {
@@ -316,11 +327,12 @@ footer section button {
     flex-direction: column;
 }
 
+
 .redes img {
     padding: 0 3px;
 }
 
- .inbox {
+.inbox {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -328,16 +340,13 @@ footer section button {
     padding-top: 40px;
 }
 
-footer p{
-    font-size: 12.5px;
-    font-weight: 500;
-    color: #8C8C94;
-}
-
 .copyright {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    font-size: 12.5px;
+    font-weight: 500;
+    color: #8C8C94;
 }
 
 .copyright-mobile {
@@ -351,7 +360,7 @@ footer p{
 /*-------------MOBILE------------------------------------*/
 
 @media (max-width: 480px) {
-    *{
+    * {
         padding: 0;
         margin: 0;
         box-sizing: border-box;
@@ -365,82 +374,117 @@ footer p{
     header nav {
         display: none;
     }
+
     header button {
         display: none;
     }
 
-    .menu-hamburguesa{
-        display:flex
-
+    .menu-hamburguesa {
+        display: flex
     }
 
     /*--------------------------------------------------*/
-    main {
+    .principal {
         flex-direction: column-reverse;
-        display: flex;
+        width: 100vw;
+        justify-content: space-between;
     }
 
-    .principal{
-        justify-content: center;
+    .principal section {
         display: flex;
         width: 100%;
-    }
-
-    .principal h1 {
         justify-content: center;
-        width: 50%;
-        height: 40%;
+        padding: 0;
+        align-self: center;
     }
 
-    .principal p {
+    .primero {
         justify-content: center;
-        width: 90%;
     }
 
-    
-    .derecha {
+    .primero h1 {
+        justify-content: center;
+        width: 100%;
+        height: 80%;
+        text-align: center;
+        align-self: center;
+    }
+
+    .primero p {
+        justify-content: center;
+        width: 80%;
+        text-align: center;
+        align-self: center;
+    }
+
+    .primero button {
+        align-self: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .primero a {
+        align-self: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .principal .derecha {
         display: none;
     }
 
-    .graphic-mobile{
+    .graphic-mobile {
         display: flex;
+        margin-bottom: 50%;
     }
 
     /*----------------------------------------------------*/
-    .segundo{
+    .segundo {
         flex-direction: column;
-        width: 100%;
         margin: 20% 0%;
-        justify-content: space-between;
-
+        display: flex;
     }
 
     .segundo article {
         width: 100%;
         justify-content: center;
+        display: flex;
     }
 
-    #izquierda-p{
-        width: 84%;
-        margin-top: 20px;
-        text-align: center
+    #izquierda-p {
+        width: 75%;
+        margin-top: 15%;
+        text-align: center;
+        margin-bottom: 20%;
+        padding: 0;
+        justify-content: center;
+        align-self: center;
     }
-    .segundo h2{
-        width: 84%;
+
+    .segundo h2 {
+        width: 100%;
         justify-content: center;
         text-align: center;
-        
+        padding: 0;
+    }
+
+    .h3-01,
+    .h3-02,
+    .h3-03 {
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
     }
 
     .segundo h3 {
         background: #8B48BF4D;
         width: 100%;
         height: 40px;
-        padding: 2% 0 2% 10%;
+        padding: 2% 0 2% 0%;
         margin: 5% 0;
+
     }
 
-    .segundo p{
+    .segundo p {
         width: 95%;
         padding: 0 0 0 10%;
     }
@@ -451,7 +495,8 @@ footer p{
         margin-top: 30%;
     }
 
-    .card1, .card3{
+    .card1,
+    .card3 {
         display: none;
     }
 
@@ -465,7 +510,8 @@ footer p{
 
     .cuarto {
         flex-direction: column;
-        padding-bottom: 5%;
+        padding: 5% 0;
+        height: 40vh;
     }
 
     .cuarto h2 {
@@ -489,8 +535,12 @@ footer p{
         justify-content: space-between;
     }
 
-    .inbox{
+    .inbox {
         margin-bottom: 15%;
+    }
+
+    .inbox input {
+        border: solid 2px #8B48BF;
     }
 
     .logos {
@@ -517,12 +567,12 @@ footer p{
         display: flex;
     }
 
-    .redes img{
+    .redes img {
         padding: 0 7.5%;
         justify-content: center;
     }
 
-    .copyright-mobile{
+    .copyright-mobile {
         display: flex;
         padding: 10%;
         margin-top: 10%;
