@@ -29,6 +29,10 @@ body {
     box-sizing: border-box;
 }
 
+a:hover {
+    opacity: 60%;
+    cursor: pointer;
+}
 /* Encabezado -----------------------------------------------------------------------------------*/
 header {
     display: flex;
@@ -54,7 +58,7 @@ li a {
 }
 
 header button:hover {
-    opacity: 80%
+    opacity: 70%
 }
 
 .menu-hamburguesa {
@@ -93,7 +97,7 @@ h1 {
 }
 
 main button:hover {
-    opacity: 80%
+    opacity: 70%
 }
 
 main .graphic-mobile {
@@ -230,7 +234,7 @@ main .graphic-mobile {
 }
 
 .tercero button:hover {
-    opacity: 80%
+    opacity: 70%
 }
 
 /*----------------------------------------------------------------------------------------------*/
@@ -263,7 +267,7 @@ main .graphic-mobile {
 }
 
 #reversebutton:hover {
-    opacity: 80%
+    opacity: 70%
 }
 
 /* Pie de página---------------------------------------------------------------------------------*/
@@ -311,7 +315,7 @@ footer section button {
 }
 
 footer button:hover {
-    opacity: 80%;
+    opacity: 70%;
 }
 
 .flex {
@@ -398,16 +402,13 @@ footer button:hover {
         align-self: center;
     }
 
-    .primero {
-        justify-content: center;
-    }
-
     .primero h1 {
         justify-content: center;
         width: 100%;
         height: 80%;
         text-align: center;
         align-self: center;
+        padding: 0px;
     }
 
     .primero p {
@@ -415,6 +416,7 @@ footer button:hover {
         width: 80%;
         text-align: center;
         align-self: center;
+        margin-top: 5%;
     }
 
     .primero button {
@@ -435,7 +437,7 @@ footer button:hover {
 
     .graphic-mobile {
         display: flex;
-        margin-bottom: 50%;
+        margin-bottom: 40%;
     }
 
     /*----------------------------------------------------*/
@@ -468,20 +470,20 @@ footer button:hover {
         padding: 0;
     }
 
+
     .h3-01,
     .h3-02,
     .h3-03 {
-        border-top-left-radius: 100px;
-        border-bottom-left-radius: 100px;
+        border-radius: 25px 0 0 25px;
     }
 
     .segundo h3 {
         background: #8B48BF4D;
-        width: 100%;
+        width: 90%;
         height: 40px;
         padding: 2% 0 2% 0%;
-        margin: 5% 0;
-
+        margin: 5% 0 0 40px;
+        align-self: center ;
     }
 
     .segundo p {
